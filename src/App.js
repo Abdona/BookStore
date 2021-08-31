@@ -7,23 +7,29 @@ import {
 } from 'react-router-dom';
 import Categories from './components/Categories';
 import Books from './components/Books';
+// import book from './components/bookComponent';
 
 function App() {
   return (
     <Router>
       <nav>
-        <ul>
-          <li>
-            <Link to="/">BOOKS</Link>
-          </li>
-          <li>
-            <Link to="CATEGORIES">CATEGORIES</Link>
-          </li>
-        </ul>
+        <div>
+          <h1>Bookstore CMS</h1>
+          <ul>
+            <li>
+              <Link to="/">BOOKS</Link>
+            </li>
+            <li>
+              <Link to="CATEGORIES">CATEGORIES</Link>
+            </li>
+          </ul>
+        </div>
       </nav>
       <Switch>
         <Route path="/CATEGORIES"><Categories /></Route>
-        <Route path="/"><Books /></Route>
+        <Route path="/">
+          <Books />
+        </Route>
       </Switch>
     </Router>
   );
