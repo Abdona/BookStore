@@ -4,7 +4,6 @@ import bookReducer from './books/books';
 
 const reducer = combineReducers({
   bookReducer,
-  // additional reducers could be added here
 });
 
 const BookStore = createStore(reducer, applyMiddleware(logger));

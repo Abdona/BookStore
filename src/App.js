@@ -5,6 +5,7 @@ import {
   Route,
   Link,
 } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import Categories from './components/Categories';
 import Books from './components/Books';
 
@@ -27,7 +28,7 @@ function App() {
       <Switch>
         <Route path="/CATEGORIES"><Categories /></Route>
         <Route path="/">
-          <Books />
+          <Provider><Books /></Provider>
         </Route>
       </Switch>
     </Router>
