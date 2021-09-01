@@ -8,9 +8,9 @@ const Book = (props) => (
       <h3>{props.name}</h3>
       <h6>{props.author}</h6>
       <ul>
-        <li>Comments</li>
-        <li>Remove</li>
-        <li>Edit</li>
+        <li><button type="button"> Comments </button></li>
+        <li><button type="button"> Remove </button></li>
+        <li><button type="button"> Edit </button></li>
       </ul>
     </div>
     <div>
