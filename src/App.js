@@ -7,7 +7,6 @@ import {
 } from 'react-router-dom';
 import Categories from './components/Categories';
 import Books from './components/Books';
-// import book from './components/bookComponent';
 
 function App() {
   return (
