@@ -1,5 +1,4 @@
-/* eslint-disable no-unused-vars */
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { uuid } from 'uuidv4';
 import { addBook } from '../redux/books/books';
 
