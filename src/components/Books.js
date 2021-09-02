@@ -4,7 +4,7 @@ import Book from './bookComponent';
 import AddNewBook from './addnewbook';
 
 export default function Books() {
-  const books = useSelector((state) => state.bookReducer.books);
+  const books = useSelector((state) => state.bookReducer);
   const booklist = books.map((obj) => <Book key={obj.id.toString()} id={obj.id} type={obj.category} name={obj.title} author="ahmed" completed="65" />);
   return (
     <>
