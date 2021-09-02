@@ -4,11 +4,11 @@ import { uuid } from 'uuidv4';
 import { addBook } from '../redux/books/books';
 
 export default function AddNewBook() {
-  // const counter = useSelector((state) => state.bookReducer.count);
   const dispatch = useDispatch();
   const submitBook = () => {
     const newBook = {
       id: uuid(),
+      category: document.getElementById('category').value,
       title: document.getElementById('bookname').value,
     };
     dispatch(addBook(newBook));
@@ -17,7 +17,13 @@ export default function AddNewBook() {
     <>
       <h1>ADD NEW BOOK</h1>
       <input placeholder="Booktitle" id="bookname" />
-      <select><option>Category</option></select>
+      <select id="category">
+        <option selected disabled>Category</option>
+        <option>Action</option>
+        <option>Horror</option>
+        <option>Sciencefiction</option>
+        <option>Fantasy</option>
+      </select>
       <button type="button" onClick={submitBook}>ADD BOOK</button>
     </>
   );
