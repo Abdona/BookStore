@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import { uuid } from 'uuidv4';
 import { addBook } from '../redux/books/books';
 
-export default function AddNewBook() {
+const AddNewBook = () => {
   const dispatch = useDispatch();
   const submitBook = () => {
     const newBook = {
@@ -26,4 +26,6 @@ export default function AddNewBook() {
       <button type="button" onClick={submitBook}>ADD BOOK</button>
     </>
   );
-}
+};
+
+export default AddNewBook;

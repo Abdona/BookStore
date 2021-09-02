@@ -1,9 +1,8 @@
-/* eslint-disable no-unused-vars */
 import { useSelector } from 'react-redux';
 import Book from './bookComponent';
 import AddNewBook from './addnewbook';
 
-export default function Books() {
+const Books = () => {
   const books = useSelector((state) => state.bookReducer);
   const booklist = books.map((obj) => <Book key={obj.id.toString()} id={obj.id} type={obj.category} name={obj.title} author="ahmed" completed="65" />);
   return (
@@ -12,4 +11,5 @@ export default function Books() {
       <AddNewBook />
     </>
   );
-}
+};
+export default Books;

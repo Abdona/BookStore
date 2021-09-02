@@ -1,9 +1,11 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/destructuring-assignment */
 import { useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
 import { removeBook } from '../redux/books/books';
 
-function Book(props) {
+const Book = (props) => {
+  const {
+    type, name, author, id, completed,
+  } = props;
   const dispatch = useDispatch();
   const removeHandler = (e) => {
     dispatch(removeBook(e.target.id));
@@ -11,18 +13,18 @@ function Book(props) {
   return (
     <div>
       <div>
-        <h6>{props.type}</h6>
-        <h3>{props.name}</h3>
-        <h6>{props.author}</h6>
+        <h6>{type}</h6>
+        <h3>{name}</h3>
+        <h6>{author}</h6>
         <ul>
-          <li><button type="button" id={props.id}> Comments </button></li>
-          <li><button type="button" id={props.id} onClick={removeHandler}> Remove </button></li>
-          <li><button type="button" id={props.id}> Edit </button></li>
+          <li><button type="button" id={id}> Comments </button></li>
+          <li><button type="button" id={id} onClick={removeHandler}> Remove </button></li>
+          <li><button type="button" id={id}> Edit </button></li>
         </ul>
       </div>
       <div>
         <h3>
-          {props.completed}
+          {completed}
           %
         </h3>
         <h5>Completed</h5>
@@ -30,5 +32,11 @@ function Book(props) {
 
     </div>
   );
-}
+};
+
+Book.propTypes = {
+  type: PropTypes.string,
+  category: PropTypes.string,
+}.isRequired;
+
 export default Book;
