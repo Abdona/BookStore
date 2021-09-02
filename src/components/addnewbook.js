@@ -1,18 +1,18 @@
-/* eslint-disable import/extensions */
+/* eslint-disable no-unused-vars */
 import { useDispatch, useSelector } from 'react-redux';
-import { addBook } from '../redux/books';
-
-const dispatch = useDispatch();
-const counter = useSelector((state) => state.counter || 0);
+import { uuid } from 'uuidv4';
+import { addBook } from '../redux/books/books';
 
 export default function AddNewBook() {
-  function submitBook() {
+  // const counter = useSelector((state) => state.bookReducer.count);
+  const dispatch = useDispatch();
+  const submitBook = () => {
     const newBook = {
-      id: counter + 1,
-      title: document.getElementById('bookname'),
+      id: uuid(),
+      title: document.getElementById('bookname').value,
     };
     dispatch(addBook(newBook));
-  }
+  };
   return (
     <>
       <h1>ADD NEW BOOK</h1>

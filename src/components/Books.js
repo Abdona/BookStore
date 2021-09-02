@@ -1,11 +1,14 @@
+/* eslint-disable no-unused-vars */
+import { useSelector } from 'react-redux';
 import Book from './bookComponent';
 import AddNewBook from './addnewbook';
 
 export default function Books() {
+  const books = useSelector((state) => state.bookReducer.books);
+  const booklist = books.map((obj) => <Book key={obj.id.toString()} type="Action" name={obj.title} author="ahmed" completed="65" />);
   return (
-
     <>
-      <Book type="Action" name="mosdf" author="jkkjkj" completed="65" />
+      <ul>{booklist}</ul>
       <AddNewBook />
     </>
   );
