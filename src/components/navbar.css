@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  background-color: #fff;
+  height: 2.938rem;
+  padding: 1.813rem;
+}
+
+.navbar ul {
+  display: flex;
+  margin-top: 0.5rem;
+  background-color: #fff;
+}
+
+.navbar ul li {
+  background-color: #fff;
+  margin-right: 2.563rem;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+}
+
+.navbar ul li a {
+  color: #121212;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+.navbar h1 {
+  color: #0290ff;
+  background-color: #fff;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-right: 2.938rem;
+  margin-left: 6.25rem;
+}

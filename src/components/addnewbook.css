@@ -3,24 +3,25 @@
 }
 
 .addcontainer h1 {
-  margin-left: 6.4rem;
+  margin-left: 6.25rem;
 }
 
 .addbook {
   display: flex;
   justify-content: center;
-  padding: 1rem;
+  margin-top: 1.188rem;
 }
 
 .addbook input {
-  margin-right: 30px;
+  margin-right: 2.125rem;
+  margin-left: 6.25rem;
   width: 41.45rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
 }
 
 .addbook select {
-  margin-right: 30px;
+  margin-right: 2.125rem;
   width: 17.813rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
@@ -29,6 +30,7 @@
 .addbook button {
   width: 11.5rem;
   height: 2.813rem;
+  margin-right: 6.188rem;
   border-radius: 3px;
-  background-color: #0d8ffa;
+  background-color: #0290ff;
 }
