@@ -1,16 +1,22 @@
 import { useDispatch } from 'react-redux';
 import { uuid } from 'uuidv4';
 import { addBook } from '../redux/books/books';
+import { addTostore } from '../utils/bookstoreapi';
 
 const AddNewBook = () => {
   const dispatch = useDispatch();
-  const submitBook = () => {
+  const submitBook = async () => {
     const newBook = {
       id: uuid(),
       category: document.getElementById('category').value,
       title: document.getElementById('bookname').value,
     };
-    dispatch(addBook(newBook));
+    if (document.getElementById('bookname').value !== '' && document.getElementById('category').selectedIndex !== 0) {
+      await addTostore(newBook.id, newBook.title, newBook.category);
+      dispatch(addBook(newBook));
+    }
+    document.getElementById('bookname').value = '';
+    document.getElementById('category').selectedIndex = 0;
   };
   return (
     <>
