@@ -25,8 +25,15 @@ const bookReducer = (state = initialState, action) => {
       return [...state, action.payload];
     case REMOVE_BOOK:
       return state.filter((book) => book.id !== action.id);
-    case SET_BOOK:
-      return [[...state, ...action.payload[0], action.payload[1]]];
+    case SET_BOOK: {
+      const saved = Object.entries(action.payload).map(([key, value]) => ({
+        id: key,
+        title: value[0].title,
+        category: value[0].category,
+        author: 'Author undefiend',
+      }));
+      return saved;
+    }
     default:
       return state;
   }
