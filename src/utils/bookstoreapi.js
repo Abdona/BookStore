@@ -23,7 +23,7 @@ export const getFromstore = async () => {
     method: 'GET',
   });
   const resParse = await res.text();
-  return resParse;
+  return JSON.parse(resParse);
 };
 
 export const removeFromstore = async (id) => {
