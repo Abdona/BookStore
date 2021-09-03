@@ -11,8 +11,12 @@ const AddNewBook = () => {
       category: document.getElementById('category').value,
       title: document.getElementById('bookname').value,
     };
-    await addTostore(newBook.id, newBook.title, newBook.category);
-    dispatch(addBook(newBook));
+    if (document.getElementById('bookname').value !== '' && document.getElementById('category').selectedIndex !== 0) {
+      await addTostore(newBook.id, newBook.title, newBook.category);
+      dispatch(addBook(newBook));
+    }
+    document.getElementById('bookname').value = '';
+    document.getElementById('category').selectedIndex = 0;
   };
   return (
     <>
