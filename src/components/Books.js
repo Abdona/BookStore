@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-key */
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import Book from './bookComponent';
@@ -11,10 +10,6 @@ const Books = () => {
   const books = useSelector((state) => state.bookReducer);
   const load = async () => {
     const resp = await getFromstore();
-    // const respObj = await Object.values(resp);
-    // const respKey = await Object.keys(resp);
-    // const respObj1 = await resp.map((x) => x);
-    // console.log(respObj1);
     dispatch(setBook(resp));
   };
   useEffect(() => {

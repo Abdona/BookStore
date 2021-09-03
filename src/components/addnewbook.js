@@ -11,8 +11,7 @@ const AddNewBook = () => {
       category: document.getElementById('category').value,
       title: document.getElementById('bookname').value,
     };
-    const respond = await addTostore(newBook.id, newBook.title, newBook.category);
-    console.log(respond);
+    await addTostore(newBook.id, newBook.title, newBook.category);
     dispatch(addBook(newBook));
   };
   return (

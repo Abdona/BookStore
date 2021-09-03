@@ -1,5 +1,3 @@
-// const fetch = require('cross-fetch');
-
 export const addTostore = async (id, bookname, booktype) => {
   const res = await fetch('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/YRt46nmouQk8zfo0qX5a/books', {
     method: 'POST',
@@ -41,8 +39,3 @@ export const removeFromstore = async (id) => {
   const resParse = await res.text();
   return resParse;
 };
-
-// addTostore(34334, 'sfasfasf', 'sciencefiction');
-// getFromstore();
-// removeFromstore('34334');
-// getFromstore();

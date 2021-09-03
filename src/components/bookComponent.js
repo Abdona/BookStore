@@ -9,8 +9,7 @@ const Book = (props) => {
   } = props;
   const dispatch = useDispatch();
   const removeHandler = async (e) => {
-    const response = await removeFromstore(e.target.id);
-    console.log(response);
+    await removeFromstore(e.target.id);
     dispatch(removeBook(e.target.id));
   };
   return (
