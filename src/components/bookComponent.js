@@ -1,13 +1,16 @@
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { removeBook } from '../redux/books/books';
+import { removeFromstore } from '../utils/bookstoreapi';
 
 const Book = (props) => {
   const {
     type, name, author, id, completed,
   } = props;
   const dispatch = useDispatch();
-  const removeHandler = (e) => {
+  const removeHandler = async (e) => {
+    const response = await removeFromstore(e.target.id);
+    console.log(response);
     dispatch(removeBook(e.target.id));
   };
   return (
