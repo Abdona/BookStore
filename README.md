@@ -2,6 +2,25 @@
 
 Bookstore CMS .
 
+# live Demo
+ [Bookstore CMS]()
+
+# Navigation Bar
+
+| ![screenshot](./Navbar.png)|
+| :------------: |
+
+# Main Section
+
+| ![screenshot](./mainsection.png)
+| :------------: |
+|  Main Section 1 |
+
+# Add New book 
+
+| ![screenshot](./addnewbook.png) |
+| :------------: |
+
 ## Installation
 
 - Clone the repository , use  `git@github.com:Abdona/BookStore.git` 
