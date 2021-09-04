@@ -1,5 +1,6 @@
 .addcontainer {
   margin-top: 3rem;
+  margin-bottom: 10rem;
 }
 
 .addcontainer h1 {
@@ -16,6 +17,7 @@
   margin-right: 2.125rem;
   margin-left: 6.25rem;
   width: 41.45rem;
+  padding-left: 1.63rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
 }
@@ -24,6 +26,8 @@
   margin-right: 2.125rem;
   width: 17.813rem;
   border-radius: 4px;
+  padding-left: 1rem;
+  background-color: #fff;
   border: solid 1px #e8e8e8;
 }
 
