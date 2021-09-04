@@ -26,8 +26,10 @@ const Book = (props) => {
         </ul>
       </div>
       <div className="bookstatus">
-        <div className="progstat">
+        <div className="container">
           <h3>
+            <span className="oval" />
+            <span className="ovalinner" />
             {completed}
             %
           </h3>
