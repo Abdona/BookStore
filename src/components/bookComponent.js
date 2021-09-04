@@ -25,17 +25,20 @@ const Book = (props) => {
           <li><button type="button" id={id}> Edit </button></li>
         </ul>
       </div>
-      <div>
-        <h3>
-          {completed}
-          %
-        </h3>
-        <h5>Completed</h5>
+      <div className="bookstatus">
+        <div className="progstat">
+          <h3>
+            {completed}
+            %
+          </h3>
+          <h5>Completed</h5>
+        </div>
+        <div className="border" />
       </div>
       <div className="bookupdate">
         <span>CURRENT CHAPTER</span>
-        <br />
         <span>CHAPTER 17</span>
+        <br />
         <br />
         <button className="progressButt" type="button">UPDATE PROGRESS</button>
       </div>

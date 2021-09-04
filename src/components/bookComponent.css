@@ -65,16 +65,61 @@
   color: #4386bf;
 }
 
+.bookstatus {
+  display: flex;
+  margin-top: 2.188rem;
+  width: 4.25rem;
+  height: 2.438rem;
+  font-size: 1.3rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.progoutter {
+  color: #000;
+  background-color: #f1f1f1;
+}
+
+.proginner {
+  color: #fff;
+  background-color: #2196f3;
+  height: 24px;
+  width: 75%;
+}
+
+.bookstatus .border {
+  width: 0.125rem;
+  height: 4.375rem;
+  border: solid 1px #e8e8e8;
+}
+
 .book .bookupdate {
-  width: 4.688rem;
   height: 1.313rem;
-  margin: 0.438rem 6.813rem 0.25rem 3.688rem;
+  margin: 0.438rem 6.813rem 0.25rem 8.75rem;
   font-size: 1rem;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.4px;
+}
+
+.book .bookupdate :first-child {
+  width: 7.875rem;
+  height: 1.125rem;
+  margin-bottom: 0.438rem;
+  display: inline-block;
+  opacity: 0.5;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
 }
 
 .book .progressButt {
