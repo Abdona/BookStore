@@ -14,7 +14,6 @@ Bookstore CMS .
 
 | ![screenshot](./mainsection.png)
 | :------------: |
-|  Main Section 1 |
 
 # Add New book 
 
