@@ -1,8 +1,9 @@
 .navbar {
   display: flex;
   background-color: #fff;
-  height: 2.938rem;
+  height: 1.938rem;
   padding: 1.813rem;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .navbar ul {
