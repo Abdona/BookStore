@@ -134,17 +134,23 @@
 
 .bookstatus .oval,
 .ovalinner {
-  right: 38rem;
-  width: 4.25rem;
-  height: 4.25rem;
   border-style: solid;
   border-radius: 50%;
-  border-width: 5px;
   border-image-source: linear-gradient(to bottom, var(--medium-blue), var(--dodger-blue));
   border-image-slice: 1;
   position: absolute;
 }
 
-.ovalinner {
-  border-color: #379cf6;
+.bookstatus .oval {
+  width: 4.25rem;
+  height: 4.25rem;
+  right: 38rem;
+  background-image: linear-gradient(92deg, #ddd 50%, transparent 50%), linear-gradient(271deg, #028cd5 50%, #ddd 50%);
+}
+
+.bookstatus .ovalinner {
+  background-color: #fff;
+  width: 3.25rem;
+  height: 3.25rem;
+  margin: 0.459rem;
 }

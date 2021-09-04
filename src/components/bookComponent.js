@@ -28,8 +28,9 @@ const Book = (props) => {
       <div className="bookstatus">
         <div className="container">
           <h3>
-            <span className="oval" />
-            <span className="ovalinner" />
+            <div className="oval">
+              <div className="ovalinner" />
+            </div>
             {completed}
             %
           </h3>

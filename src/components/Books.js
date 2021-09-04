@@ -15,7 +15,7 @@ const Books = () => {
   useEffect(() => {
     load();
   }, []);
-  const booklist = books.map((obj) => <Book key={obj.id.toString()} id={obj.id} type={obj.category} name={obj.title} author="Martin" completed="65" />);
+  const booklist = books.map((obj) => <Book key={obj.id.toString()} id={obj.id} type={obj.category} name={obj.title} author="Martin" completed="50" />);
   return (
     <>
       <ul>{booklist}</ul>
