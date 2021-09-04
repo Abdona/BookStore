@@ -34,14 +34,13 @@ Bookstore CMS .
 
 You can now view the development server at `localhost:3030`.
 
-# Getting Start with Testing
-
-- open your Terminal and Navigate to the project destination and type `npm install`
-- run `npm run test`
 
 ## Built With
 
 - React.js
+- Redux
+- bookstore API
+- redux-thunk middleware
 
 
 
@@ -55,7 +54,7 @@ You can now view the development server at `localhost:3030`.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page]().
+Feel free to check the [issues page](https://github.com/Abdona/BookStore/issues).
 
 ## Show your support
 
