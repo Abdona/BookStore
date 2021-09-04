@@ -2,6 +2,7 @@ import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { removeBook } from '../redux/books/books';
 import { removeFromstore } from '../utils/bookstoreapi';
+import './bookComponent.css';
 
 const Book = (props) => {
   const {
@@ -13,25 +14,37 @@ const Book = (props) => {
     dispatch(removeBook(e.target.id));
   };
   return (
-    <div>
+    <div className="book">
       <div>
-        <h6>{type}</h6>
-        <h3>{name}</h3>
-        <h6>{author}</h6>
+        <h6 className="categ">{type}</h6>
+        <h3 className="movename">{name}</h3>
+        <h6 className="authname">{author}</h6>
         <ul>
           <li><button type="button" id={id}> Comments </button></li>
           <li><button type="button" id={id} onClick={removeHandler}> Remove </button></li>
           <li><button type="button" id={id}> Edit </button></li>
         </ul>
       </div>
-      <div>
-        <h3>
-          {completed}
-          %
-        </h3>
-        <h5>Completed</h5>
+      <div className="bookstatus">
+        <div className="container">
+          <h3>
+            <div className="oval">
+              <div className="ovalinner" />
+            </div>
+            {completed}
+            %
+          </h3>
+          <h5>Completed</h5>
+        </div>
+        <div className="border" />
       </div>
-
+      <div className="bookupdate">
+        <span>CURRENT CHAPTER</span>
+        <span>CHAPTER 17</span>
+        <br />
+        <br />
+        <button className="progressButt" type="button">UPDATE PROGRESS</button>
+      </div>
     </div>
   );
 };
