@@ -3,7 +3,7 @@
 Bookstore CMS .
 
 # live Demo
- [Bookstore CMS](https://app.netlify.com/sites/hopeful-jepsen-60d8f2/overview)
+ [Bookstore CMS](https://hopeful-jepsen-60d8f2.netlify.app/)
 
 # Navigation Bar
 
