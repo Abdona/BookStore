@@ -41,3 +41,19 @@
   margin-right: 2.938rem;
   margin-left: 6.25rem;
 }
+
+.oval {
+  width: 2.813rem;
+  height: 2.813rem;
+  border: solid 1px #e8e8e8;
+  border-radius: 50%;
+  position: absolute;
+  right: 6.188rem;
+}
+
+.avatar {
+  width: 1.063rem;
+  height: 1.063rem;
+  margin-left: 0.86rem;
+  margin-top: 0.8rem;
+}

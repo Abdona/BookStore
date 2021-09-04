@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import './navbar.css';
+import avatar from './avatar.svg';
 
 const Navbar = () => (
   <nav>
@@ -13,6 +14,9 @@ const Navbar = () => (
           <Link to="CATEGORIES">CATEGORIES</Link>
         </li>
       </ul>
+      <span className="oval">
+        <img className="avatar" src={avatar} alt="person" />
+      </span>
     </div>
   </nav>
 );
